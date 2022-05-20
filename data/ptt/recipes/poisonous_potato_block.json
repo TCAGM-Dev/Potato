@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ppp",
+        "ppp",
+        "ppp"
+    ],
+    "key": {
+        "p": {
+            "item": "minecraft:poisonous_potato"
+        }
+    },
+    "result": {
+        "item": "knowledge_book",
+        "count": 1
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "ptt:poisonous_potato_block"
+      }
+    }
+  },
+  "rewards": {
+    "function": "ptt:items/poisonous_potato_block"
+  }
+}

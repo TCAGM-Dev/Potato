@@ -1,0 +1,2 @@
+execute as @e[type=armor_stand,tag=ptt_summon_poisonous_block] at @s run function ptt:placeables/poisonous_potato_block_place
+execute as @e[type=armor_stand,tag=ptt_poisonous_block] at @s run function ptt:placeables/poisonous_potato_block_tick
