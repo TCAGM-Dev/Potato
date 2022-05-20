@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "ptt:potato_pickaxe"
+      }
+    }
+  },
+  "rewards": {
+    "function": "ptt:items/potato_pickaxe"
+  }
+}
