@@ -1,0 +1,2 @@
+scoreboard objectives add ptt_ate_potato minecraft.used:minecraft.potato
+scoreboard objectives add ptt_was_holding_eptt dummy
