@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "ptt:wither_potato"
+        }
+      }
+    },
+    "rewards": {
+      "function": "ptt:items/wither_potato"
+    }
+  }
+  
