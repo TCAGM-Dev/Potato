@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "ptt:compressed_bone_block"
+        }
+      }
+    },
+    "rewards": {
+      "function": "ptt:items/compressed_bone_block"
+    }
+  }
+  

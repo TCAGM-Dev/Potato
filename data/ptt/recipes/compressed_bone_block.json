@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "bbb",
+        "bbb",
+        "bbb"
+    ],
+    "key": {
+        "b": {
+            "item": "minecraft:bone_block"
+        }
+    },
+    "result": {
+        "item": "knowledge_book",
+        "count": 1
+    }
+}

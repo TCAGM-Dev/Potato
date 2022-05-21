@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ggg",
+        "gpg",
+        "ggg"
+    ],
+    "key": {
+        "p": {
+            "item": "minecraft:potato"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "knowledge_book",
+        "count": 1
+    }
+}

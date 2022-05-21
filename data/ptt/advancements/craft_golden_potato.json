@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "ptt:craft_golden_potato"
+        }
+      }
+    },
+    "rewards": {
+      "function": "ptt:items/craft_golden_potato"
+    }
+  }
+  
