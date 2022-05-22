@@ -28,8 +28,9 @@ execute if entity @e[type=illusioner,tag=ptt_potatologer] run scoreboard players
 execute if score .attack2 ptt_timer matches ..0 as @e[tag=ptt_phase_2] at @s run function ptt:entities/potatologer_attacks/attack2
 execute as @e[type=arrow,tag=ptt_explosive] if data entity @s {inGround:1b} at @s run function ptt:entities/potatologer_attacks/attack2_part2
 execute as @e[type=armor_stand,tag=ptt_kill_me,nbt={OnGround:1b}] run kill @s
+execute as @e[type=armor_stand,tag=ptt_kill_me] at @s unless entity @e[type=arrow,distance=...9,tag=ptt_explosive] run function ptt:entities/potatologer_attacks/attack2_part2
 
-execute as @a[nbt={SelectedItem:{tag:{ptt_potato_wand:1b}}}] run function ptt:potato_wand_tick
+execute as @a[nbt={SelectedItem:{tag:{ptt_potato_wand:1b}}}] at @s anchored eyes run function ptt:potato_wand_tick
 
 scoreboard players remove @a[scores={ptt_ate_potato=1..}] ptt_ate_potato 1
 scoreboard players remove @a[scores={ptt_sneak=1..}] ptt_sneak 1

@@ -1,0 +1,3 @@
+execute if entity @s[nbt={SelectedItem:{tag:{ptt_current_spell:0}}}] run summon area_effect_cloud ~ ~ ~ {Particle:"dust 0.000 1.000 0.000 1",Radius:3f,Duration:60,Potion:"minecraft:strong_poison"}
+execute if entity @s[nbt={SelectedItem:{tag:{ptt_current_spell:1}}}] run summon arrow ~ ~15 ~ {Tags:["ptt_explosive"],Passengers:[{id:"armor_stand",ArmorItems:[{},{},{},{Count:1,id:"minecraft:potato"}],Invulnerable:1b,Invisible:1b,Silent:1b,NoGravity:1b,Tags:["ptt_kill_me"]}],Invulnerable:1b,Silent:1b}
+execute if entity @s[nbt={SelectedItem:{tag:{ptt_current_spell:1}}}] run particle dust 1 0 0 .75 ~ ~ ~ 0 0 0 0 1
