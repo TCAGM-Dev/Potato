@@ -5,8 +5,6 @@ execute as @a[scores={ptt_ate_potato=1..,ptt_was_holding_eptt=1}] run function p
 execute as @a[scores={ptt_ate_potato=1..,ptt_was_holding_wptt=1}] run function ptt:ate_wptt
 execute as @a[scores={ptt_ate_potato=1..,ptt_was_holding_gptt=1}] run function ptt:ate_gptt
 
-scoreboard players remove @a[scores={ptt_ate_potato=1..}] ptt_ate_potato 1
-
 scoreboard players reset @a ptt_was_holding_eptt
 execute as @a[nbt={SelectedItem:{tag:{ptt_enchanted_potato:1b}}}] run scoreboard players set @s ptt_was_holding_eptt 1
 scoreboard players reset @a ptt_was_holding_wptt
@@ -30,3 +28,9 @@ execute if entity @e[type=illusioner,tag=ptt_potatologer] run scoreboard players
 execute if score .attack2 ptt_timer matches ..0 as @e[tag=ptt_phase_2] at @s run function ptt:entities/potatologer_attacks/attack2
 execute as @e[type=arrow,tag=ptt_explosive] if data entity @s {inGround:1b} at @s run function ptt:entities/potatologer_attacks/attack2_part2
 execute as @e[type=armor_stand,tag=ptt_kill_me,nbt={OnGround:1b}] run kill @s
+
+execute as @a[nbt={SelectedItem:{tag:{ptt_potato_wand:1b}}}] run function ptt:potato_wand_tick
+
+scoreboard players remove @a[scores={ptt_ate_potato=1..}] ptt_ate_potato 1
+scoreboard players remove @a[scores={ptt_sneak=1..}] ptt_sneak 1
+scoreboard players remove @a[scores={ptt_click_coas=1..}] ptt_click_coas 1

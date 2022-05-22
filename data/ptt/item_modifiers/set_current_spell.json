@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "ptt:potato_wand"
+    },
+    "ops": [
+      {
+        "source": "current_spell",
+        "target": "ptt_current_spell",
+        "op": "replace"
+      }
+    ]
+  }
+]

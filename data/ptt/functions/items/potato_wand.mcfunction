@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Potato Wand","color":"aqua","italic":false}'},HideFlags:4,Unbreakable:1b,CustomModelData:496303,ptt_potato_wand:1b,ptt_current_spell:0}
