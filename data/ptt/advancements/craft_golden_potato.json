@@ -8,7 +8,7 @@
       }
     },
     "rewards": {
-      "function": "ptt:items/craft_golden_potato"
+      "function": "ptt:items/golden_potato"
     }
   }
   
