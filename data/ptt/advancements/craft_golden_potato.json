@@ -3,7 +3,7 @@
       "requirement": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "ptt:craft_golden_potato"
+          "recipe": "ptt:golden_potato"
         }
       }
     },
