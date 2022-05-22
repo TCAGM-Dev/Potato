@@ -22,11 +22,11 @@ execute if entity @e[type=illusioner,tag=ptt_potatologer] run bossbar set ptt:po
 execute unless entity @e[type=illusioner,tag=ptt_potatologer] run bossbar set ptt:potatologer visible false
 
 #attack1
-scoreboard players remove attack1 ptt_timer 1
-execute if score attack1 ptt_timer matches ..0 as @e[tag = ptt_phase1] at @s run function ptt:attacks/attack1
+execute if entity @e[type=illusioner,tag=ptt_potatologer] run scoreboard players remove .attack1 ptt_timer 1
+execute if score .attack1 ptt_timer matches ..0 as @e[tag=ptt_phase_1] at @s run function ptt:entities/potatologer_attacks/attack1
 
 #attack2
-scoreboard players remove attack2 ptt_timer 1
-execute if score attack1 ptt_timer matches ..0 as @e[tag = ptt_phase2] at @s run function ptt:attacks/attack2
-execute as @e[type = arrow,tag = explosive] if data entity @s {inGround:1b} run function ptt:attacks/attack2_part2
-
+execute if entity @e[type=illusioner,tag=ptt_potatologer] run scoreboard players remove .attack2 ptt_timer 1
+execute if score .attack2 ptt_timer matches ..0 as @e[tag=ptt_phase_2] at @s run function ptt:entities/potatologer_attacks/attack2
+execute as @e[type=arrow,tag=ptt_explosive] if data entity @s {inGround:1b} at @s run function ptt:entities/potatologer_attacks/attack2_part2
+execute as @e[type=armor_stand,tag=ptt_kill_me,nbt={OnGround:1b}] run kill @s
