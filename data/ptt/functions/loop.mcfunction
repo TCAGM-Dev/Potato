@@ -20,3 +20,13 @@ execute as @e[type=armor_stand,tag=ptt_summon_potatologer] at @s run function pt
 execute as @e[type=illusioner,tag=ptt_potatologer] at @s run function ptt:potatologer_tick
 execute if entity @e[type=illusioner,tag=ptt_potatologer] run bossbar set ptt:potatologer visible true
 execute unless entity @e[type=illusioner,tag=ptt_potatologer] run bossbar set ptt:potatologer visible false
+
+#attack1
+scoreboard players remove attack1 ptt_timer 1
+execute if score attack1 ptt_timer matches ..0 as @e[tag = ptt_phase1] at @s run function ptt:attacks/attack1
+
+#attack2
+scoreboard players remove attack2 ptt_timer 1
+execute if score attack1 ptt_timer matches ..0 as @e[tag = ptt_phase2] at @s run function ptt:attacks/attack2
+execute as @e[type = arrow,tag = explosive] if data entity @s {inGround:1b} run function ptt:attacks/attack2_part2
+
