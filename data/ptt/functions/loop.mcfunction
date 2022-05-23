@@ -32,6 +32,9 @@ execute as @e[type=armor_stand,tag=ptt_kill_me] at @s unless entity @e[type=arro
 
 execute as @a[nbt={SelectedItem:{tag:{ptt_potato_wand:1b}}}] at @s anchored eyes run function ptt:potato_wand_tick
 
+execute as @e[type=item,nbt={Item:{tag:{ptt_stone_fern:1b}}}] at @s align xyz positioned ~.5 ~.5 ~.5 run function ptt:create_potato_ore
+execute as @e[type=marker,tag=ptt_potato_ore] at @s if block ~ ~ ~ air run function ptt:potato_ore_destroy
+
 scoreboard players remove @a[scores={ptt_ate_potato=1..}] ptt_ate_potato 1
 scoreboard players remove @a[scores={ptt_sneak=1..}] ptt_sneak 1
 scoreboard players remove @a[scores={ptt_click_coas=1..}] ptt_click_coas 1

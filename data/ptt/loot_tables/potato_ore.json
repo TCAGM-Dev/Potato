@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": {
+          "min": 6,
+          "max": 8
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:poisonous_potato"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 19,
+            "name": "minecraft:potato"
+          }
+        ]
+      }
+    ]
+  }
+  
