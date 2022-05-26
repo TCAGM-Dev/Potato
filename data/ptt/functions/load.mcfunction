@@ -24,3 +24,5 @@ scoreboard players set .attack3 ptt_timer 400
 
 bossbar add ptt:potatologer {"text":"Potatologer"}
 bossbar set ptt:potatologer max 100
+
+tellraw @a [{"text":"Potatoes+","color":"gold"},{"text":" by ","color":"white"},{"text":"TCAGM","color":"gold"},{"text":" and ","color":"white"},{"text":"Tech Guy","color":"gold"},{"text":" has successfully loaded!","color":"white"}]
