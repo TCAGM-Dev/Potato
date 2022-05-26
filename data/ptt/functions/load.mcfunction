@@ -16,6 +16,7 @@ scoreboard objectives add ptt_potatologer_summon dummy
 scoreboard objectives add ptt_timer dummy
 scoreboard objectives add ptt_wand_mana dummy
 scoreboard players set @a ptt_wand_mana 100
+scoreboard objectives add ptt_potatologer_kills dummy
 
 scoreboard players set .attack1 ptt_timer 200
 scoreboard players set .attack2 ptt_timer 275

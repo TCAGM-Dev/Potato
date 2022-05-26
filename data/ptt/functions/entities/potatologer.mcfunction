@@ -1,1 +1,1 @@
-summon illusioner ~ ~ ~ {Health:300f,Tags:["ptt_potatologer","ptt_phase_1"],ArmorItems:[{id:"minecraft:potato",Count:1b,tag:{display:{Name:'{"text":"Enchanted Potato","color":"yellow","italic":false}'},ptt_enchanted_potato:1b,Enchantments:[{}]}},{},{},{}],ArmorDropChances:[1.000F,0.085F,0.085F,0.085F],Attributes:[{Name:"generic.max_health",Base:300}]}
+summon illusioner ~ ~ ~ {Health:300f,Tags:["ptt_potatologer","ptt_phase_1"],Attributes:[{Name:"generic.max_health",Base:300}]}
