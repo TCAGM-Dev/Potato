@@ -32,7 +32,7 @@ execute as @e[type=armor_stand,tag=ptt_kill_me] at @s unless entity @e[type=arro
 
 #attack3
 execute if entity @e[type=illusioner,tag=ptt_potatologer] run scoreboard players remove .attack3 ptt_timer 1
-execute if score .attack3 ptt_timer matches ..0 as @e[tag=ptt_phase_1] at @s run function ptt:entities/potatologer_attacks/attack3
+execute if score .attack3 ptt_timer matches ..0 as @e[tag=ptt_phase_3] at @s run function ptt:entities/potatologer_attacks/attack3
 
 execute as @a[nbt={SelectedItem:{tag:{ptt_potato_wand:1b}}}] at @s anchored eyes run function ptt:potato_wand_tick
 
